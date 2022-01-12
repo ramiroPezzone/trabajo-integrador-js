@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- META TAGS -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- HOJAS DE ESTILO -->
+  <link rel="stylesheet" href="/css/style.css" />
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Aladin&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <title>Trabajo integrador</title>
+</head>
+
+<body>
+  <div class="nav-fixed">
+    <nav class="nav-nuestros-productos">
+      <div class="logo-nav">
+        <a href="index.html">
+          <img src="/images/logo-principal-nav.png" alt="">
+        </a>
+      </div>
+      <div class="menu-nav">
+        <details class="menu-desplegable-nav">
+          <summary>︾</summary>
+          <a href="/productos">Nuestras burguers</a>
+          <hr>
+          <a href="carga-de-producto.html">Nuevo producto
+            <p class="solo-admins"> -solo admins-</p>
+          </a>
+        </details>
+      </div>
+
+      <div class="menu-nav-normal">
+        <div>
+          <a href="/productos">Nuestras burguers</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <section class="contenedor-form-carga-de-prod">
+    <form action="/productos/guardar" method="post" class="form-carga-de-prod" enctype="multipart/form-data">
+      <h2>Carga de productos</h2>
+      <div class="item-form-carga-de-prod">
+        <label for="nombre">
+          <span>Nombre</span>
+        </label>
+        <input type="text" id="nombre" name="nombre" />
+      </div>
+    </div>
+    <div class="item-form-carga-de-prod">
+      <label for="categoria">
+        <span>Selecciona una categoría</span>
+      </label>
+      <select name="categoria" id="categoria">
+        <option value="panificados">Hamburguesas</option>
+        <option value="factureria">Papas fritas</option>
+        <option value="galletitas">Bebidas</option>
+        <option value="alfajores">Postres</option>
+        <option value="tortas">Especialidades</option>
+      </select>
+    </div>
+      <div class="item-form-carga-de-prod">
+        <label for="precio">
+          <span>Precio (en $)</span>
+        </label>
+        <input type="number" id="precio" name="precio" min="0" step="0.01" />
+      </div>
+      <div class="item-form-carga-de-prod item-descr">
+        <label for="descripcion descripcion-nvo-prod">
+          <span>Descripción</span>
+        </label>
+        <textarea name="descripcion" id="descripcion" cols="30" rows="10"></textarea>
+      <div class="item-form-carga-de-prod">
+        <label for="foto">
+          <span>Cargar foto</span>
+        </label>
+        <input type="file" id="foto" name="imagen" accept="image/*" />
+      </div>
+      <div class="item-form-carga-de-prod">
+        <label for="idusuario">
+          <span>Responsable</span>
+        </label>
+        <input type="text" id="idusuario">
+      </div>
+      <div class="item-form-carga-de-prod">
+        <label for="contrasena">Password</label>
+        <input type="password" name="contrasena" id="contrasena">
+      </div>
+      <div class="item-form-carga-de-prod btns">
+        <button type="reset">Reiniciar</button>
+        <button type="submit">Aceptar</button>
+      </div>
+    </form>
+  </section>
+  <footer class="footer-forms-carga-de-prod">
+    <p>2021 - Powered by: </p>
+    <p>Amado Gastón - Pezzone Ramiro - Viera Martín</p>
+  </footer>
+</body>
+
+</html>

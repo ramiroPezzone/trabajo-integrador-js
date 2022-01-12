@@ -1,0 +1,67 @@
+  <div class="hamburguesas">
+    <div class="item-hamburguesa">
+      <img src="imgs/double-dragon.jpeg" alt="">
+      <h3>Double Dragon</h3>
+      <details>
+        <summary>¿Qué tiene?</summary>
+        <p>Cheddar + panceta + huevo + jalapeño + doble burger</p>
+      </details>
+    </div>
+    <div class="item-hamburguesa">
+      <img src="imgs/double-cap.jpeg" alt="">
+      <h3>Double Cap</h3>
+      <details>
+        <summary>¿Con qué la hicimos?</summary>
+        <p>Triple cheddar + panceta + double burger y ketchup casero</p>
+      </details>
+    </div>
+    <div class="item-hamburguesa">
+      <img src="imgs/la-mexicana.jpeg" alt="">
+      <h3>La Mexicana</h3>
+      <details>
+        <summary>¡Y ándale!</summary>
+        <p>Doble cheddar + guacamole + double burguer. Suave pero con el tono ácido característico del
+          limón, y bien cremosa gracias al aguacate maduro</p>
+      </details>
+    </div>
+    <div class="item-hamburguesa">
+      <img src="imgs/la-missisipi.jpeg" alt="">
+      <h3>La missisipi</h3>
+      <details>
+        <summary>¡Si! ¡Como el río!</summary>
+        <p>Con mostaza especiada, pickle de repollo, panceta y cheddar</p>
+      </details>
+    </div>
+    <div class="item-hamburguesa">
+      <img src="imgs/suiza.jpeg" alt="">
+      <h3>La suiza</h3>
+      <details>
+        <summary>¡Te encantó!</summary>
+        <p>Gruyere + hongos asados + burguer + double cheddar</p>
+      </details>
+    </div>
+    <div class="item-hamburguesa">
+      <img src="imgs/la-tana.jpeg" alt="">
+      <h3>La tana</h3>
+      <details>
+        <summary>¡Bella ciao!</summary>
+        <p>Burger, muzzarella rebozada y pesto de albahaca</p>
+      </details>
+    </div>
+    <div class="item-hamburguesa">
+      <img src="imgs/stacker-triple.jpeg" alt="">
+      <h3>Stacker triple</h3>
+      <details>
+        <summary>¡Una bomba!</summary>
+        <p>Triple burger + cheddar + bacon y nuestra salsa secreta</p>
+      </details>
+    </div>
+    <div class="item-hamburguesa">
+      <img src="imgs/cripsy-bacon.jpeg" alt="">
+      <h3>Crispy bacon</h3>
+      <details>
+        <summary>¡Explosión de sabores!</summary>
+        <p>Burger + cheddar + panceta y huevo</p>
+      </details>
+    </div>
+  </div>

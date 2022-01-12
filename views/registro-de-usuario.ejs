@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- META TAGS -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- HOJAS DE ESTILO -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Aladin&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <title>Registro de usuario</title>
+</head>
+
+<body>
+  <div class="nav-fixed">
+    <nav class="nav-nuestros-productos">
+      <div class="logo-nav">
+        <a href="index.html">
+          <img src="imgs/logo-principal-nav.png" alt="">
+        </a>
+      </div>
+      <div class="menu-nav">
+        <details class="menu-desplegable-nav">
+          <summary>︾</summary>
+          <a href="productos.html">Nuestras burguers</a>
+          <a href="registro-de-usuario.html">Creá tu cuenta acá</a>
+          <hr>
+          <a href="carga-de-producto.html">Nuevo producto
+            <p class="solo-admins"> -solo admins-</p>
+          </a>
+        </details>
+      </div>
+
+      <div class="menu-nav-normal">
+        <div>
+          <a href="productos.html">Nuestras burguers</a>
+        </div>
+        <div>
+          <a href="registro-de-usuario.html">Creá tu cuenta acá</a>
+        </div>
+
+        <div class="menu-carga-de-prod item-nav-carga-de-prod">
+          <a href="carga-de-producto.html">Nuevo producto
+            <span class="solo-admins"> -solo admins-</span>
+          </a>
+        </div>
+
+      </div>
+    </nav>
+  </div>
+  <section class="contenedor-registro-de-usuario">
+    <h2>Registro de usuario</h2>
+    <h6>¿Ya tenés una cuenta?</h6>
+    <div class="btn-inicio-de-sesion">
+      <a href="#">
+        <button class="inicio-de-sesion">Iniciá sesión</button>
+      </a>
+    </div>
+    <form action="" class="form-reg-de-usr">
+      <div class="item-form-reg-de-usr">
+
+        <label for="nombre">Nombre completo</label>
+        <input type="text" name="nombre" id="nombre">
+
+      </div>
+      <div class="item-form-reg-de-usr">
+
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email">
+
+      </div>
+
+      <div class="item-form-reg-de-usr">
+        <label for="contrasena">Contraseña</label>
+        <input type="password" name="contrasena" id="contrasena">
+      </div>
+
+      <div class="item-form-reg-de-usr foto-de-perfil">
+        <label for="foto-de-perfil">Foto de perfil</label>
+
+        <input type="file" name="foto-de-perfil" id="foto-de-perfil" accept="image/*">
+
+      </div>
+      <div class="item-form-reg-de-usr btns">
+        <button type="reset">Reiniciar campos</button>
+        <button type="submit">Aceptar</button>
+      </div>
+    </form>
+
+  </section>
+  <footer class="footer-forms">
+    <p>2021 - Powered by: </p>
+    <p>Amado Gastón - Pezzone Ramiro - Viera Martín</p>
+  </footer>
+
+</body>
+
+</html>
