@@ -169,7 +169,7 @@ body {
   margin-top: 140px;
 }
 
-.hamburguesas img {
+.hamburguesas img, .contenedor-imagen img {
   width: 200px;
 }
 .hamburguesas {

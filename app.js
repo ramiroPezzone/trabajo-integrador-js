@@ -1,6 +1,7 @@
 let express = require('express'),
     app = express(),
     rutaProductos = require('./routes/productos'),
+    rutaAdmins = require('./routes/admins'),
     mongoose = require('mongoose'),
     port = process.env.PORT;
 if (port == null || port == "") {
@@ -35,3 +36,6 @@ app.get('/', (req, res) => {
 
 // Rutas de productos
 app.use('/productos', rutaProductos);
+
+// Rutas de admins
+app.use('/admins', rutaAdmins)

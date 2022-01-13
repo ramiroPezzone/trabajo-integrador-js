@@ -2,52 +2,19 @@
 <html lang="en">
 
 <head>
-  <!-- META TAGS -->
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- HOJAS DE ESTILO -->
-  <link rel="stylesheet" href="/css/style.css" />
-
-  <!-- GOOGLE FONTS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Aladin&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600&display=swap" rel="stylesheet" />
-
+  <%- include('head') %> 
   <title>Trabajo integrador</title>
 </head>
 
 <body>
   <div class="nav-fixed">
     <nav class="nav-nuestros-productos">
-      <div class="logo-nav">
-        <a href="index.html">
-          <img src="/images/logo-principal-nav.png" alt="">
-        </a>
-      </div>
-      <div class="menu-nav">
-        <details class="menu-desplegable-nav">
-          <summary>︾</summary>
-          <a href="/productos">Nuestras burguers</a>
-          <hr>
-          <a href="carga-de-producto.html">Nuevo producto
-            <p class="solo-admins"> -solo admins-</p>
-          </a>
-        </details>
-      </div>
-
-      <div class="menu-nav-normal">
-        <div>
-          <a href="/productos">Nuestras burguers</a>
-        </div>
-      </div>
+<%- include('navbar') %> 
     </nav>
   </div>
 
   <section class="contenedor-form-carga-de-prod">
-    <form action="/productos/guardar" method="post" class="form-carga-de-prod" enctype="multipart/form-data">
+    <form action="/admins/guardar" method="post" class="form-carga-de-prod" enctype="multipart/form-data">
       <h2>Carga de productos</h2>
       <div class="item-form-carga-de-prod">
         <label for="nombre">
