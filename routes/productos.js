@@ -24,4 +24,10 @@ routes.get('/crear', controller.crear)
 
 routes.post('/guardar', updates.single('imagen'), controller.guardar)
 
+routes.get('/detalles/:id', controller.detalles)
+
+routes.post('/editar/:id', controller.editar)
+
+routes.post('/borrar', controller.borrar)
+
 module.exports = routes;

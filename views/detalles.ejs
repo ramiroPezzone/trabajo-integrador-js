@@ -51,15 +51,17 @@
   </div>
 
   <div class="hamburguesas">
-    <% for( let i = 0; i < productos.length; i++ ) { %>
     <div class="item-hamburguesa">
-      <img src="/images/<%= productos[i].images %> " alt="">
-      <div class="contenedor-a-detalles">
-        <a href="/productos/detalles/<%= productos[i]._id %> ">Ver detalles</a>
-
+      <img src="/images/<%= productoIndividual.images %> " alt="">
+      <h3><%= productoIndividual.nombre %> </h3>
+      <p><%= productoIndividual.description %> </p>
+      </details>
+      <div class="contenedor-btn-borrar">
+        <form action="/productos/borrar" method="post">
+          <button type="submit">Borrar</button>
+        </form>
       </div>
     </div>
-    <% } %>
   </div>
 
   <footer>
