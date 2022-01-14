@@ -23,9 +23,7 @@ routes.get('/crear-producto', controller.crear)
 
 routes.post('/guardar', updates.single('imagen'), controller.guardar)
 
-routes.get('/detalles/:id', controller.detalles)
-
-routes.get('/editar:id', controller.editar)
+routes.get('/editar/:id', controller.editar)
 
 routes.post('/borrar', controller.borrar)
 

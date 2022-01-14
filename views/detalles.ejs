@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <%- include('head') %> 
+  <%- include('head') %>
   <title>Nuestras burguers</title>
 </head>
 
@@ -38,21 +38,31 @@
   </div>
 
   <div class="hamburguesas">
-    <div class="item-hamburguesa">
-      <img src="/images/<%= productoIndividual.images %> " alt="">
-      <h3><%= productoIndividual.nombre %> </h3>
-      <p><%= productoIndividual.description %> </p>
-      </details>
-      <div class="contenedor-btn-borrar">
-        <form action="/productos/borrar" method="post">
-          <button type="submit">Borrar</button>
-        </form>
+    <div class="contenedor-tarjeta-producto">
+      <div class="contenedor-flex-productos-admins">
+        <div class="contenedor-imagen">
+          <img src="/images/<%= productoIndividual.images %> " alt="">
+        </div>
+        <div class="informacion-detalles">
+          <h3>Nombre: </h3>
+          <h4><%= productoIndividual.name %> </h4>
+          <h3>Categoría: </h3>
+          <h4><%= productoIndividual.brand %></h4>
+          <h3>Precio: </h3>
+          <h4><%= productoIndividual.price %> </h4>
+          <h3>Descripción: </h3>
+          <h4><%= productoIndividual.description %> </h4>
+        </div>
+      </div>
+      <div class="contenedor-btn-atras">
+        <a href="/productos"><button type="button"><span class="flecha-atras">↤</span> Volver atrás</button></a>
       </div>
     </div>
   </div>
 
+
   <footer>
-    <%- include('footer') %> 
+    <%- include('footer') %>
   </footer>
 </body>
 

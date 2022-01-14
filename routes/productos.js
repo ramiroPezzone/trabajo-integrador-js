@@ -6,6 +6,10 @@ let express = require('express'),
 
 routes.get('/', controller.raiz)
 
+routes.get('/detalles/:id', controller.detalles)
+
+
+
 
 
 

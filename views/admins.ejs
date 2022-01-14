@@ -7,28 +7,51 @@
 </head>
 
 <body>
-  <!-- <div class="nav-fixed">
-    <nav class="nav-nuestros-productos"> -->
-      <!-- <%- include('navbar') %> -->
+  <div class="nav-fixed">
+    <nav class="nav-nuestros-productos">
+      <%- include('navbar') %>
     </nav>
   </div>
 
-  <h1>Listado de productos</h1>
 
-  <a href="/admins/crear-producto">
-    <p class="crear-producto">Crear nuevo producto</p>
-  </a>
+  <h1 class="titulo-admins">Listado de productos</h1>
+
+  <div class="contenedor-btn-nuevo-producto">
+    <a href="/admins/crear-producto">
+      <button type="button">
+        <p class="crear-producto">Crear nuevo producto</p>
+      </button>
+    </a>
+  </div>
 
   <% for( let p = 0; p < productos.length; p++ ) { %>
   <div class="contenedor-tarjeta-producto">
-    <div class="contenedor-imagen">
-      <img src="/images/<%= productos[p].images %> " alt="">
-      <h3><%= productos[p].name %> </h3>
-      <form action="/admins/borrar" method="post">
-        <button type="submit">Eliminar producto</button>
-      </form>
-      <a href="/admins/editar:id"><button>Editar producto</button></a>
+    <div class="contenedor-flex-productos-admins">
+      <div class="contenedor-imagen">
+        <img src="/images/<%= productos[p].images %> " alt="">
+      </div>
+      <div class="informacion-detalles">
+        <h3>Nombre: </h3>
+        <h4><%= productos[p].name %> </h4>
+        <h3>Categoría: </h3>
+        <h4><%= productos[p].brand %></h4>
+        <h3>Precio: </h3>
+        <h4><%= productos[p].price %> </h4>
+        <h3>Descripción: </h3>
+        <h4><%= productos[p].description %> </h4>
+      </div>
     </div>
+    <div class="contenedor-btns-admins">
+      <form action="/admins/borrar" method="post" class="form-borrar-admins">
+        <div class="item-form-admins">
+          <a href="/admins/editar/<%= productos[p]._id %> "><button type="button" class="btns-form-admins">Editar</button></a>
+        </div>
+        <div class="item-form-admins">
+          <button type="submit" class="btns-form-admins">Eliminar</button>
+        </div>
+      </form>
+    </div>
+  </div>
   </div>
 
   <% } %>

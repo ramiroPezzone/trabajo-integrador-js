@@ -22,18 +22,11 @@ const modeloProductos = require('../models/products'),
             );
             res.redirect('/admins');
         },
-        detalles: async (req, res) => {
-            const productoID = req.params.id,
-                productoDeDB = await modeloProductos.findById(productoID)
-            res.render('detalles', {
-                productoIndividual: productoDeDB
-            });
-        },
         editar: async (req, res) => {
             const productoID = req.params.id,
                 productoAEditar = await modeloProductos.findById(productoID)
             res.render('editar', {
-                producto: productoAEditar
+                producto: productoAEditar,
             });
         },
         borrar: async (req, res) => {
