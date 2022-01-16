@@ -206,6 +206,16 @@ body {
 .contenedor-editar-prod {
   border: 5px solid var(--saffron) !IMPORTANT
 }
+.item-imagen h4 {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: var(--wine);
+  color: var(--saffron);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
 
 .contenedor-editar-prod h3,
 .form-carga-de-prod input,
@@ -362,8 +372,9 @@ label[for="foto"] {
   transition: 0.3s;
 }
 
-.hamburguesas h3 {
-  font-size: 1.6em;
+.hamburguesas h3, .informacion-detalles h3 {
+  font-size: 1.4em;
+  margin-top: 10px;
   color: var(--dark-orange);
   text-shadow: 2px 2px 2px var(--wine);
 }
@@ -511,12 +522,18 @@ form input:focus:not(#foto-de-perfil, #foto) {
 }
 
 .item-form-reg-de-usr button,
-.item-form-carga-de-prod button {
-  background: var(--wine);
-  color: var(--saffron);
-  padding: 5px 10px;
-  border-radius: 10px 0;
-  border: none;
+.item-form-carga-de-prod button, 
+.item-form-carga-de-prod a button {
+background: var(--wine);
+font-size: 1.2em;
+color: var(--saffron);
+padding: 5px 10px;
+border-radius: 10px 0;
+border: none;
+cursor: pointer;
+}
+.item-form-carga-de-prod a {
+  margin-right: 20px;
 }
 
 .item-form-reg-de-usr button[type="reset"],
