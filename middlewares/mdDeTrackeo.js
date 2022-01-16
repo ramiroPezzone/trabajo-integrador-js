@@ -14,45 +14,45 @@ rutasVisitadas = (req, res, next) => {
         segundos = fecha.getSeconds();
 
     if (diaDeLaSemana == 0) {
-        diaDeLaSemana = "Domingo"
-    } else if (diaDeLaSemana == 1) {
         diaDeLaSemana = "Lunes"
-    } else if (diaDeLaSemana == 2) {
+    } else if (diaDeLaSemana == 1) {
         diaDeLaSemana = "Martes"
-    } else if (diaDeLaSemana == 3) {
+    } else if (diaDeLaSemana == 2) {
         diaDeLaSemana = "Miércoles"
-    } else if (diaDeLaSemana == 4) {
+    } else if (diaDeLaSemana == 3) {
         diaDeLaSemana = "Jueves"
-    } else if (diaDeLaSemana == 5) {
+    } else if (diaDeLaSemana == 4) {
         diaDeLaSemana = "Viernes"
-    } else {
+    } else if (diaDeLaSemana == 5) {
         diaDeLaSemana = "Sábado"
+    } else {
+        diaDeLaSemana = "Domingo"
     }
 
     // SETEANDO EL MES
-    if (mes === 0) {
+    if (mes === 1) {
         mes = "Enero"
-    } else if (mes == 1) {
-        mes = "Febrero"
     } else if (mes == 2) {
-        mes = "Marzo"
+        mes = "Febrero"
     } else if (mes == 3) {
-        mes = "Abril"
+        mes = "Marzo"
     } else if (mes == 4) {
-        mes = "Mayo"
+        mes = "Abril"
     } else if (mes == 5) {
-        mes = "Junio"
+        mes = "Mayo"
     } else if (mes == 6) {
-        mes = "Julio"
+        mes = "Junio"
     } else if (mes == 7) {
-        mes = "Agosto"
+        mes = "Julio"
     } else if (mes == 8) {
-        mes = "Septiembre"
+        mes = "Agosto"
     } else if (mes == 9) {
-        mes = "Octubre"
+        mes = "Septiembre"
     } else if (mes == 10) {
-        mes = "Noviembre"
+        mes = "Octubre"
     } else if (mes == 11) {
+        mes = "Noviembre"
+    } else if (mes == 12) {
         mes = "Diciembre"
     }
 
