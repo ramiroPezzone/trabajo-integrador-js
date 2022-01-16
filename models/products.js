@@ -2,6 +2,7 @@ let mongoose = require('mongoose');
 
 let schemaProductos = new mongoose.Schema(
     {
+        idProducto: {type: String, require: true},
         name: { type: String, required: true },
         brand: { type: String, required: true },
         price: { type: Number, required: true },

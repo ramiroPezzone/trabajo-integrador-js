@@ -118,6 +118,10 @@ body {
   text-align: center;
 }
 
+.item-imagen {
+  text-align: center;
+}
+
 .contenedor-btn-nuevo-producto {
   text-align: center;
 }
@@ -182,7 +186,8 @@ body {
 
 .contenedor-editar-prod h3 {
   text-align: center;
-  color: var();
+  color: var(--saffron);
+  font-size: 1.3em;
   font-weight: normal;
   padding: 20px 0;
   background-color: var(--wine);
@@ -192,8 +197,25 @@ body {
   width: 200px;
 }
 
-.item-form-carga-de-prod {
+.item-imagen-edicion-de-prod {
   text-align: center;
+}
+
+.item-imagen-edicion-de-prod p {
+  text-align: left;
+}
+
+input[type="file"]#foto {
+  display: none;
+}
+
+label[for="foto"] {
+  cursor: pointer;
+  background-color: var(--deep-space-sparkle);
+  width: 60%;
+  padding: 7px;
+  border: 2px solid var(--dark-orange);
+
 }
 
 
@@ -355,7 +377,6 @@ footer {
   border: 5px solid var(--dark-orange);
   color: var(--dark-orange);
   margin-bottom: 30px;
-  padding-bottom: 25px;
 }
 
 .contenedor-registro-de-usuario h2,
@@ -411,7 +432,8 @@ form label {
   font-size: 0.9em;
 }
 
-form input {
+form input,
+form textarea {
   width: 100%;
   background: transparent;
   border: none;
@@ -440,7 +462,6 @@ form input:focus:not(#foto-de-perfil, #foto) {
 
 .item-form-reg-de-usr button,
 .item-form-carga-de-prod button {
-  position: absolute;
   background: var(--wine);
   color: var(--saffron);
   padding: 5px 10px;
@@ -477,7 +498,6 @@ form input:focus:not(#foto-de-perfil, #foto) {
 }
 
 .contenedor-form-carga-de-prod textarea {
-  /* width: 50%; */
   height: 150px;
   background: transparent;
   border: 1px solid var(--dark-orange);

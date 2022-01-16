@@ -21,11 +21,13 @@ routes.get('/', controller.raiz)
 
 routes.get('/crear-producto', controller.crear)
 
-routes.post('/guardar', updates.single('imagen'), controller.guardar)
+routes.post('/guardar', updates.single('images'), controller.guardar)
 
 routes.get('/editar/:id', controller.editar)
 
-routes.post('/borrar', controller.borrar)
+routes.post('/borrar/:id', controller.borrar)
+
+routes.post('/guardarCambios/:id', updates.single('images'), controller.guardarCambios)
 
 
 module.exports = routes

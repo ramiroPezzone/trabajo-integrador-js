@@ -40,8 +40,10 @@
   <div class="hamburguesas">
     <% for( let i = 0; i < productos.length; i++ ) { %>
     <div class="item-hamburguesa">
+      <h4><%= productos[i].name %> </h4>
       <img src="/images/<%= productos[i].images %> " alt="">
       <div class="contenedor-a-detalles">
+        <h4>Cod. <%= productos[i].idProducto %> </h4>
         <a href="/productos/detalles/<%= productos[i]._id %> ">Ver detalles</a>
 
       </div>

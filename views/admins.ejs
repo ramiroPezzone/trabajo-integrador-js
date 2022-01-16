@@ -31,20 +31,22 @@
         <img src="/images/<%= productos[p].images %> " alt="">
       </div>
       <div class="informacion-detalles">
-        <h3>Nombre: </h3>
-        <h4><%= productos[p].name %> </h4>
-        <h3>Categoría: </h3>
-        <h4><%= productos[p].brand %></h4>
-        <h3>Precio: </h3>
-        <h4><%= productos[p].price %> </h4>
-        <h3>Descripción: </h3>
-        <h4><%= productos[p].description %> </h4>
+        <h4>ID del producto: </h4>
+        <h3><%= productos[p].idProducto %> </h3>
+        <h4>Nombre: </h4>
+        <h3><%= productos[p].name %> </h3>
+        <h4>Categoría: </h4>
+        <h3><%= productos[p].brand %></h3>
+        <h4>Precio: </h4>
+        <h3><%= productos[p].price %> </h3>
+        <h4>Descripción: </h4>
+        <h3><%= productos[p].description %> </h3>
       </div>
     </div>
     <div class="contenedor-btns-admins">
-      <form action="/admins/borrar" method="post" class="form-borrar-admins">
+      <form action="/admins/borrar/<%= productos[p]._id %>" method="post" class="form-borrar-admins">
         <div class="item-form-admins">
-          <a href="/admins/editar/<%= productos[p]._id %> "><button type="button" class="btns-form-admins">Editar</button></a>
+          <a href="/admins/editar/<%= productos[p].id %> "><button type="button" class="btns-form-admins">Editar</button></a>
         </div>
         <div class="item-form-admins">
           <button type="submit" class="btns-form-admins">Eliminar</button>
