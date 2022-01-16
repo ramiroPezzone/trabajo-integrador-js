@@ -3,6 +3,8 @@ let express = require('express'),
     rutaProductos = require('./routes/productos'),
     rutaAdmins = require('./routes/admins'),
     mongoose = require('mongoose'),
+    fs = require('fs')
+    rutasVisitadas = require('./middlewares/mdDeTrackeo'),
     port = process.env.PORT;
 if (port == null || port == "") {
     port = 8000;
@@ -24,6 +26,9 @@ app.set('view engine', 'ejs');
 
 // Declarando carpeta public
 app.use(express.static(__dirname + '/public'));
+
+// Middleware para registro de rutas de ingreso del usuario
+app.use(rutasVisitadas)
 
 // Middlewares para manejos de post
 app.use(express.urlencoded({ extended: false }));

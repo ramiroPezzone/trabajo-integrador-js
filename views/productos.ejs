@@ -2,37 +2,17 @@
 <html lang="en">
 
 <head>
-  <%- include('head') %> 
+
+  <%- include('head') %>
+
   <title>Nuestras burguers</title>
+
 </head>
 
 <body>
-  <div class="nav-fixed">
-    <nav class="nav-nuestros-productos">
-      <div class="logo-nav">
-        <a href="/">
-          <img src="images/logo-principal-nav.png" alt="">
-        </a>
-      </div>
-      <div class="menu-nav">
-        <details class="menu-desplegable-nav">
-          <summary>︾</summary>
-          <a href="carga-de-producto.html">Nuevo producto
-            <p class="solo-admins"> -solo admins-</p>
-          </a>
-        </details>
-      </div>
 
-      <div class="menu-nav-normal">
-        <div class="menu-carga-de-prod item-nav-carga-de-prod">
-          <a href="/productos/crear">Nuevo producto
-            <span class="solo-admins"> -solo admins-</span>
-          </a>
-        </div>
+  <%- include('navbar') %>
 
-      </div>
-    </nav>
-  </div>
   <div class="titulo-productos">
     <h2>¡Nuestras burguers!</h2>
   </div>
@@ -40,21 +20,20 @@
   <div class="hamburguesas">
     <% for( let i = 0; i < productos.length; i++ ) { %>
     <div class="item-hamburguesa">
-      <h4><%= productos[i].name %> </h4>
+      <h4 class="nombre-de-producto"><%= productos[i].name %> </h4>
       <img src="/images/<%= productos[i].images %> " alt="">
       <div class="contenedor-a-detalles">
         <h4>Cod. <%= productos[i].idProducto %> </h4>
-        <a href="/productos/detalles/<%= productos[i]._id %> ">Ver detalles</a>
-
+        <div class="contenedor-btn-ver-detalles">
+          <a href="/productos/detalles/<%= productos[i]._id %> ">Ver detalles</a>
+        </div>
       </div>
     </div>
     <% } %>
   </div>
 
   <footer>
-    <div class="contenedor-footer">
-      <%- include('footer') %> 
-    </div>
+    <%- include('footer') %>
   </footer>
 </body>
 
