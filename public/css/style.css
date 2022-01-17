@@ -90,7 +90,7 @@ body {
   border-radius: 20px 0 0 20px;
 }
 
-.carga-de-producto a {
+.carga-de-producto p {
   color: var(--dark-orange);
   text-decoration: none;
   font-family: "Aladin", cursive;
@@ -133,7 +133,6 @@ body {
   font-size: 1.2em;
 }
 
-
 .contenedor-tarjeta-producto {
   width: 80%;
   background-color: var(--silver-metallic-blur);
@@ -142,6 +141,7 @@ body {
   text-align: center;
   padding: 20px;
   margin: 30px auto;
+  max-width: 600px;
 }
 
 .contenedor-flex-productos-admins {
@@ -162,7 +162,6 @@ body {
 
 .informacion-detalles h3 {
   font-weight: normal;
-
 }
 
 .informacion-detalles h4 {
@@ -185,8 +184,6 @@ body {
   text-shadow: 2px 2px 2px #000, -2px 2px 2px #000;
 }
 
-
-
 .form-borrar-admins {
   display: flex;
   flex-direction: row;
@@ -204,23 +201,23 @@ body {
 
 /* EDITAR */
 .contenedor-editar-prod {
-  border: 5px solid var(--saffron) !IMPORTANT
+  border: 5px solid var(--saffron) !important;
 }
 .item-imagen h4 {
   font-size: 1.2em;
   text-transform: uppercase;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background-color: var(--wine);
   color: var(--saffron);
   padding: 10px;
   margin-bottom: 10px;
 }
 
-
 .contenedor-editar-prod h3,
 .form-carga-de-prod input,
-.item-form-carga-de-prod label>span {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.item-form-carga-de-prod label > span {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .contenedor-editar-prod h3 {
@@ -256,7 +253,6 @@ label[for="foto"] {
   padding: 7px;
   border: 2px solid var(--dark-orange);
 }
-
 
 /* PRODUCTOS */
 .menu-nav-normal {
@@ -372,7 +368,8 @@ label[for="foto"] {
   transition: 0.3s;
 }
 
-.hamburguesas h3, .informacion-detalles h3 {
+.hamburguesas h3,
+.informacion-detalles h3 {
   font-size: 1.4em;
   margin-top: 10px;
   color: var(--dark-orange);
@@ -522,15 +519,15 @@ form input:focus:not(#foto-de-perfil, #foto) {
 }
 
 .item-form-reg-de-usr button,
-.item-form-carga-de-prod button, 
+.item-form-carga-de-prod button,
 .item-form-carga-de-prod a button {
-background: var(--wine);
-font-size: 1.2em;
-color: var(--saffron);
-padding: 5px 10px;
-border-radius: 10px 0;
-border: none;
-cursor: pointer;
+  background: var(--wine);
+  font-size: 1.2em;
+  color: var(--saffron);
+  padding: 5px 10px;
+  border-radius: 10px 0;
+  border: none;
+  cursor: pointer;
 }
 .item-form-carga-de-prod a {
   margin-right: 20px;
@@ -595,7 +592,50 @@ cursor: pointer;
   gap: 10px;
 }
 
+/* VENTANA LOGUEO */
+.contenedor-form-logueo {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: -100vh;
+  background-color: var(--dark-orange-blur);
+  backdrop-filter: blur(10px);
+  z-index: 100000;
+  text-align: center;
+  transition: .5s;
+}
+.contenedor-flex-form-logueo {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input-logueo {
+  margin: 10px;
+  width: 250px;
+}
+.item-form-logueo button {
+  margin-top: 20px;
+  width: 30%;
+}
+.btns-logueo {
+  text-align: right;
+}
+
+.contenedor-form-logueo-activo {
+  top: 0;
+  transition: .5s;
+}
+
 @media (min-width: 744px) {
+
+  .contenedor-flex-productos-admins {
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    align-content: center;
+  }
   .contenedor-logo {
     margin-top: 25px;
   }
@@ -653,10 +693,12 @@ cursor: pointer;
     margin-right: 5px;
     padding: 10px 15px 10px 15px;
     border-radius: 20px 20px 0 0;
-    background: linear-gradient(180deg,
-        rgb(63, 22, 28) 0%,
-        rgba(112, 38, 50, 0.8) 30%,
-        rgba(112, 38, 50, 0.6) 100%);
+    background: linear-gradient(
+      180deg,
+      rgb(63, 22, 28) 0%,
+      rgba(112, 38, 50, 0.8) 30%,
+      rgba(112, 38, 50, 0.6) 100%
+    );
   }
 
   .menu-nav-normal a {
@@ -700,7 +742,17 @@ cursor: pointer;
   }
 }
 
-@media (min-width: 1470px) {
+@media (min-width: 1440px) {
+  .contenedor-tarjetas-productos-flex {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+  .contenedor-tarjeta-producto{    
+    max-width: 500px;
+    position: relative;
+  }
   .hamburguesas {
     margin: 0 auto;
     margin-bottom: 50px;

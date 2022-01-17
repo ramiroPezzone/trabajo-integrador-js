@@ -8,9 +8,4 @@ routes.get('/', controller.raiz)
 
 routes.get('/detalles/:id', controller.detalles)
 
-
-
-
-
-
 module.exports = routes;

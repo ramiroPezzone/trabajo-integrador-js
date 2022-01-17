@@ -29,5 +29,4 @@ routes.post('/borrar/:id', controller.borrar)
 
 routes.post('/guardarCambios/:id', updates.single('images'), controller.guardarCambios)
 
-
 module.exports = routes
