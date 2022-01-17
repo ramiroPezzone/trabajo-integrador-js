@@ -1,32 +1,41 @@
 nombre: Double Dragon
+precio: 120
 ingredientes: Cheddar + panceta + huevo + jalapeño + doble burger
 imagen: double-dragon.jpeg
 
 nombre: Double Cap
+precio:110
 ingredientes: Triple cheddar + panceta + double burger y ketchup casero
 imagen: double-cap.jpeg
 
+
 nombre: La Mexicana
+precio: 200
 ingredientes: Doble cheddar + guacamole + double burguer. Suave pero con el tono ácido característico del
           limón, y bien cremosa gracias al aguacate maduro
 imagen: la-mexicana.jpeg
 
 nombre: La missisipi
+precio: 180
 ingredientes: Con mostaza especiada, pickle de repollo, panceta y cheddar
 imagen: la-missisipi.jpeg
 
 nombre: La suiza
+precio: 190
 ingredientes: Gruyere + hongos asados + burguer + double cheddar
 imagen: suiza.jpeg
 
 nombre: La tana
+precio: 170
 ingredientes: Burger, muzzarella rebozada y pesto de albahaca
 imagen: la-tana.jpeg
 
 nombre: Stacker triple
+precio: 220
 ingredientes: Triple burger + cheddar + bacon y nuestra salsa secreta
 imagen: stacker-triple.jpeg
 
 nombre: Crispy bacon
+precio: 210
 ingredientes: Burger + cheddar + panceta y huevo
 imagen: cripsy-bacon.jpeg
